@@ -1,0 +1,64 @@
+@keyframes rain {
+    from {
+        background-position-y: 0;
+    }
+
+    to {
+        background-position-y: 30vh;
+    }
+}
+
+@keyframes totoro {
+    from {
+        right: -15%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes bullet {
+    from {
+        right: -20%;
+    }
+
+    to {
+        right: 120%;
+    }
+}
+
+@keyframes mario {
+    from {
+        left: -10%;
+    }
+
+    25% {
+        left: 25%;
+        bottom: 0;
+    }
+
+    45% {
+        bottom: 70%;
+        left: 45%;
+    }
+
+    65% {
+        bottom: 0;
+        left: 65%;
+    }
+
+    80% {
+        left: 65%;
+        transform: scaleX(1);
+    }
+
+    80.1% {
+        transform: scaleX(-1);
+    }
+
+    to {
+        left: -10%;
+        transform: scaleX(-1);
+    }
+}

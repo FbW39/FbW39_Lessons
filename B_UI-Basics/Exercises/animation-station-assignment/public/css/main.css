@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+@keyframes rain {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 30vh;
+  }
+}
+
+@keyframes totoro {
+  from {
+    right: -15%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes bullet {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 120%;
+  }
+}
+
+@keyframes mario {
+  from {
+    left: -10%;
+  }
+  25% {
+    left: 25%;
+    bottom: 0;
+  }
+  45% {
+    bottom: 70%;
+    left: 45%;
+  }
+  65% {
+    bottom: 0;
+    left: 65%;
+  }
+  80% {
+    left: 65%;
+    transform: scaleX(1);
+  }
+  80.1% {
+    transform: scaleX(-1);
+  }
+  to {
+    left: -10%;
+    transform: scaleX(-1);
+  }
+}
+
+.screen {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+#rainy-days {
+  background-image: url("/images/raindrops.jpg");
+  background-size: auto 100%;
+  position: relative;
+  animation: rain 5s linear infinite;
+}
+
+#rainy-days img {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  animation: totoro 5s linear infinite;
+}
+
+#retro-platformer {
+  background-color: aquamarine;
+  width: 100vw;
+  position: relative;
+}
+
+#retro-platformer .bullet {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  animation: bullet 5s linear infinite;
+}
+
+#retro-platformer .mario {
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+  animation: mario 5s linear infinite;
+}

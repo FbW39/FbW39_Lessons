@@ -1,0 +1,18 @@
+{
+    "name": "animation-station-assignment",
+    "version": "1.0.0",
+    "description": "Bring these graphics to life with SAAS!",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "connect-livereload": "^0.6.1",
+        "express": "^4.17.1",
+        "livereload": "^0.9.1",
+        "node-sass-middleware": "^0.11.0"
+    }
+}
